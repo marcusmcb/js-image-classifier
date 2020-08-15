@@ -6,14 +6,14 @@
 
 body {
     width: 100vw;;
-    height: 100vw;
+    height: 50vw;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #0072ff;
     font-size: 1.2rem;
-    font-family: sans-serif;
+    font-family: sans-serif;    
 }
 
 .image-box {
@@ -24,6 +24,7 @@ body {
     flex-direction: flex;
     align-items: center;
     text-align: center;
+    width: 50vw;
 }
 
 .image {
@@ -33,24 +34,50 @@ body {
 
 .label-text {
     font-size: 1.5rem;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 200px;
     margin-bottom: 7px;
+    margin-left: 10px;
 }
 
 .accuracy-text {
     margin-bottom: 2px;
+    margin-left: 10px;
 }
 
 .predict-btn {
-    background-color: #00ff00;
+    background-color: lightskyblue;
     font-size: 1.4rem;
     padding: 5px;
     margin: 20px 0px;
     outline: none;
     cursor: pointer;
     border-radius: 3px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);    
+}
+
+.upload-btn::before {
+    display: block;
+    background-color: yellow;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px 8px;
+    margin: 15px 0px 0px 0px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+input[type="file" i] {
+    outline: none;
+    border: none;
+}
+
+#headline {
+    margin-top: 10vh;
+    color: white;
 }
 
 

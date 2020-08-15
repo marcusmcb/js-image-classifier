@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-    <script type="text/javascript" src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"
+    ></script>
     <title>Image Classification</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+    <div>
+        <h1 id="headline">Image Classification</h1>
+    </div>
+      <div class="image-box">
+        <div>
+            <img src="./img/animal.jpeg" class="image" />
+        </div>        
+        <div>
+          <p class="label-text">Unidentified</p>        
+          <p class="accuracy-text">Accuracy: 0%</p>
+        </div>
+      </div>
 
-<div class="container">
-    <div class="image-box">
-        <img src="./img/animal.jpeg" class="image">
-        <p class="label-text">Unidentified</p>
-        <p class="accuracy-test">Accuracy: 0%</p>
+      <div>
+        <input type="file" class="upload-btn" />
+        <br>
+        <button class="predict-btn" disabled>Predict</button>
+      </div>
     </div>
 
-    <button class="predict-btn" disabled>PREDICT</button>
-</div>
-    
-<script type="text/javascript" src="./script.js"></script>    
-</body>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
